@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Владимир Фадеев](https://up.htmlacademy.ru/htmlcss/29/user/1505405).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Кузнецов](https://htmlacademy.ru/profile/maxkuznetsov).
 
 ---
 
