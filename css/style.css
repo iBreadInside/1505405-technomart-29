@@ -1,0 +1,19 @@
+/* Colors */
+:root {
+    --basic-red: EE3643;
+    --basic-green: 63A63E;
+    --basic-grey: 3D546F;
+    --basic-greylight: C5C5C5;
+    --basic-background: F1F5F7;
+    --white: FFFFFF;
+    --special-yellow: FFBF47;
+    --special-blue: 3BBCE3;
+    --special-lilac: DC91D8;
+    --special-greenlight: 8ED78F;
+    --special-yellowlight: FFD180;
+    --success: 5FBB2D;
+    --warning: FFBF47;
+    --error: BA2732;
+    --linear-greylight: linear-gradient(FFFFFF, EAEAEA);
+}
+
