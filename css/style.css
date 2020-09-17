@@ -1,19 +1,129 @@
 /* Colors */
 :root {
-    --basic-red: EE3643;
-    --basic-green: 63A63E;
-    --basic-grey: 3D546F;
-    --basic-greylight: C5C5C5;
-    --basic-background: F1F5F7;
-    --white: FFFFFF;
-    --special-yellow: FFBF47;
-    --special-blue: 3BBCE3;
-    --special-lilac: DC91D8;
-    --special-greenlight: 8ED78F;
-    --special-yellowlight: FFD180;
-    --success: 5FBB2D;
-    --warning: FFBF47;
-    --error: BA2732;
-    --linear-greylight: linear-gradient(FFFFFF, EAEAEA);
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-grey: #3D546F;
+    --basic-greylight: #C5C5C5;
+    --basic-background: #F1F5F7;
+    
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFD180;
+
+    --success: #5FBB2D;
+    --warning: #FFBF47;
+    --error: #BA2732;
+
+    --linear-greylight: linear-gradient(#FFFFFF, #EAEAEA);
+}
+
+/* Global */
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: white;
+    background-color: white;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    padding: 10px;
+    background-color: var(--basic-red);
+}
+
+/* Header */
+h1 {
+    width: 208px;
+    color: var(--basic-red);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.login-link,
+.registration-link {
+    background-color: white;
+}
+
+/* Navigation */
+.site-navigation {
+    list-style: none;
+}
+
+.navigation-item,
+.promo-item {
+    display: inline;
+}
+
+.header-word {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.body-header,
+.body-footer {
+    background-color: var(--basic-background);
+}
+
+.header-top {
+    background-color: var(--basic-grey);
+}
+
+/* Promo */
+.promo-item {
+    height: 30px;
+    width: 60px;
+    margin: 10px;
+    background-color: var(--special-yellow);
+}
+
+.promo-button {
+    padding: 5px;
+    /* Прозрачность */
+}
+
+/* Popular */
+h2 {
+    height: 50px;
+    width: 900px;
+    background-color: white;
+    color: var(--basic-grey);
+}
+
+.goods-item {
+    border: 1px solid var(--basic-greylight);
+    height: 100px;
+    width: 50px;
+}
+
+.old-price {
+    color: var(--basic-greylight);
+    text-decoration: line-through;
+}
+
+/* Footer */
+
+.email {
+    color: var(--special-yellow);
 }
 
