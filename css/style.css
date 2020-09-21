@@ -178,7 +178,6 @@ h1 {
     height: 30px;
     width: 60px;
     margin: 10px;
-    /* font-weight: 700; */
     background-color: var(--special-yellow);
 }
 
@@ -261,7 +260,7 @@ h2 {
 }
 
 .goods-name {
-    font-family: "PT Sans";
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     color: black;
     font-size: 18px;
@@ -359,11 +358,6 @@ h3 {
 .footer-bottom {
     background-color: var(--service-hover);
 }
-
-/* .footer-contacts a {
-    color: white;
-    background-color: var(--basic-red);
-} */
 
 .footer-contacts p {
     font-size: 18px;
