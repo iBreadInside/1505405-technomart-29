@@ -22,6 +22,7 @@
     --red-hover: #CA2C37;
     --footer-adress: #F3F7F9;
     --footer-list-top: #F1F5F7;
+    --social-back: #212A3A;
 
 
     --success: #5FBB2D;
@@ -188,10 +189,12 @@ img {
 
 .promo-button:hover {
     background-color: var(--basic-greylight);
+    opacity: 0.3;
 }
 
 .promo-button:active {
     background-color: var(--old-price);
+    opacity: 0.3;
 }
 
 .materials {
@@ -235,6 +238,10 @@ img {
     background-color: var(--error);
 }
 
+.slider-button-right {
+    transform: rotate(180deg);
+}
+
 /* Popular */
 .popular-head {
     background-color: var(--popular-head);
@@ -253,6 +260,7 @@ img {
     line-height: 18px;
     background-color: var(--basic-red);
 }
+
 .goods-item {
     border: 1px solid var(--basic-greylight);
     height: 318px;
@@ -365,6 +373,10 @@ img {
     width: 323px;
 }
 
+.footer-contacts a {
+    color: white;
+}
+
 .footer-navigation-top a {
     color: var(--footer-list-top);
     font-size: 18px;
@@ -392,6 +404,13 @@ img {
 
 .footer-bottom p:first-child {
     width: 227px;
+}
+
+.social-button {
+    background-color: var(--social-back);
+    background-size: 44px 44px;
+    border-radius: 50%;
+    stroke-linecap: round;
 }
 
 .email {
