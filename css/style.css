@@ -86,12 +86,20 @@ ul {
 }
 
 .button {
-    padding: 10px;
     background-color: var(--basic-red);
     text-transform: uppercase;
     color: white;
     font-size: 14px;
     line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.red-button {
+    width: 192px;
+    height: 38px;
 }
 
 .search:focus {
@@ -333,6 +341,12 @@ ul {
     text-transform: uppercase;
 }
 
+.popular-head a {
+    width: 192px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 .new {
     font-size: 14px;
     line-height: 18px;
@@ -480,6 +494,14 @@ ul {
 
 .main-contacts p {
     width: 181px;
+}
+
+.about-button {
+    width: 220px;
+}
+
+.lost-button {
+    width: 300px;
 }
 
 /* Footer */
