@@ -82,7 +82,6 @@ ul {
     display: grid;
     background-color: var(--basic-background);
     gap: 45px;
-    padding-bottom: 60px;
 }
 
 .button {
@@ -109,6 +108,23 @@ ul {
 
 .header-top {
     background-color: var(--service-hover);
+    height: 42px;
+}
+
+.header-top .container {
+    display: grid;
+    grid-template-columns: 220px auto 150px 150px 150px;
+    align-items: center;
+}
+
+.head-line img {
+    padding: 12px 57px 12px 55px;
+    background-color: var(--basic-red);
+}
+
+.middle-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .site-description {
@@ -117,6 +133,13 @@ ul {
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
+    margin: 0 0 0 30px;
+}
+
+.login-registration {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
 }
 
 .login-link,
@@ -125,14 +148,31 @@ ul {
     color: black;
 }
 
+.login-link {
+    padding: 12px 27px 12px 45px;
+}
+
+.registration-link {
+    padding: 12px 24px;
+    margin-left: 10px;
+}
+
 .header-word {
     font-size: 18px;
     line-height: 24px;
     color: white;
 }
 
+.header-word:not(:first-of-type) {
+    text-align: center;
+}
+
 .header-word:last-child {
     background-color: var(--basic-green);
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-word:last-child:hover {
@@ -143,20 +183,26 @@ ul {
     color: var(--white-opacity);
 }
 
-.phone-block {
-    padding: 0 270px;
+.header-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
 }
 
 .header-phone {
     color: var(--basic-red);
     font-size: 21px;
     line-height: 30px;
+    padding: 4px 42px 5px 71px;
+    border: 3px solid white;
 }
 
 .adress {
     color: var(--special-black);
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
 }
 
 /* Login */
@@ -165,6 +211,7 @@ ul {
     background-color: white;
     font-size: 21px;
     line-height: 21px;
+    display: inline-block;
 }
 
 .login-button:hover {
@@ -177,13 +224,27 @@ ul {
 
 /* Navigation */
 .site-navigation {
-    list-style: none;
     background-color: var(--special-black);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
-.navigation-item,
-.footer-top li {
-    display: inline;
+.navigation-item {
+    padding: 16px 24px 20px 27px;
+}
+
+.navigation-item:first-child {
+    padding-left: 52px;
+}
+
+.navigation-item:last-child {
+    padding-right: 47px;
+}
+
+.navigation-item a {
+    display: block;
 }
 
 .navigation-word {
@@ -192,11 +253,11 @@ ul {
     line-height: 24px;
 }
 
-.navigation-word:hover {
+.navigation-item:hover {
     background-color: var(--service-hover);
 }
 
-.navigation-word:active {
+.navigation-item:active {
     color: var(--white-opacity);
     background-color: var(--navigation-active);
 }
@@ -422,7 +483,7 @@ ul {
 }
 
 .services .container {
-    padding-top: 70px;
+    padding: 70px 0;
 }
 
 .service-name {
@@ -434,13 +495,22 @@ ul {
 }
 
 .service-text {
-    width: 396px;
+    width: 460px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: black;
-    margin-top: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 1px;
+}
+
+.service-container {
+    display: flex;
+    margin-top: 70px;
+}
+
+.describe-list {
+    padding-left: 80px;
+    width: 100%
 }
 
 .term-list,
@@ -452,8 +522,12 @@ ul {
 .term-item {
     font-size: 21px;
     line-height: 30px;
+    font-weight: 700;
     background-color: var(--special-black);
     width: 240px;
+    display: block;
+    padding: 13.5px 20px 17.5px;
+    box-sizing: border-box;
 }
 
 .term-item:hover {
@@ -462,7 +536,7 @@ ul {
     background-color: var(--service-hover);
     width: 240px;
 }
-
+.active-term,
 .term-item:active {
     color: var(--basic-grey);
     font-size: 21px;
@@ -471,12 +545,13 @@ ul {
     width: 240px;
 }
 
-.describe-item h4 {
+.describe-item h3 {
     color: var(--special-black);
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
-
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 /* About */
@@ -486,31 +561,101 @@ ul {
     padding: 70px 0;
 }
 
+.main-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-name {
+    margin-bottom: 24px;
+}
+
+.about-text {
+    width: 460px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+.about-text:first-of-type {
+    margin-bottom: 26px;
+}
+
+.describe-item {
+    position: relative;
+}
+
+.describe-item::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/Service-Delivery.svg");
+    top: 22px;
+    right: 0;
+    width: 468px;
+    height: 216px;
+}
+
+.service-text {
+    margin-top: 0;
+    margin-bottom: auto;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.describe-item .service-text {
+    max-width: 275px;
+    margin-bottom: 0;
+}
+
 .transport-item {
     color: black;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 25px;
+}
+
+.transport-item {
+    margin-top: 7px;
 }
 
 .main-contacts p {
     width: 181px;
+    margin-bottom: 32px;
+}
+
+..main-contacts img {
+    display: block;
 }
 
 .about-button {
     width: 220px;
+    margin-top: auto;
 }
 
 .lost-button {
-    width: 300px;
+    width: 100%;
+    margin-top: 25px;
 }
 
 /* Footer */
+.body-footer {
+    display: grid;
+}
+
 .footer-top {
     background-color: var(--special-black);
 }
 
+.footer-top .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .footer-bottom {
-    background-color: var(--service-hover);=
+    background-color: var(--service-hover);
 }
 
 .footer-bottom .container {
@@ -520,20 +665,53 @@ ul {
     flex-direction: row;
 }
 
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacts img {
+    background-color: var(--basic-red);
+    padding: 20px 41px 25px;
+    margin-bottom: 22px;
+}
+
 .footer-contacts p {
     font-size: 18px;
     line-height: 24px;
     width: 323px;
+    margin-top: 0;
+    margin-bottom: 54px;
+    align-items: center;
 }
 
 .footer-contacts a {
     color: white;
 }
 
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-navigation-top {
+    display: flex;
+    width: 547px;
+    justify-content: space-between;
+    margin: 37px 0 34px;
+}
+
 .footer-navigation-top a {
     color: var(--footer-list-top);
     font-size: 18px;
     line-height: 24px;
+}
+
+.footer-navigation-bottom {
+    display: flex;
+    width: 524px;
+    justify-content: space-between;
 }
 
 .footer-navigation-bottom a {
@@ -555,8 +733,18 @@ ul {
     line-height: 18px;
 }
 
-.footer-bottom p:first-child {
+.footer-bottom p {
+    margin: 0;
+}
+
+.copy {
     width: 227px;
+}
+
+.social {
+    display: flex;
+    margin-top: 34px;
+    margin-bottom: 29px;
 }
 
 .social-button {
@@ -565,20 +753,25 @@ ul {
     width: 44px;
     border-radius: 50%;
     stroke-linecap: round;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feedback {    
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
     flex-direction: row;
 }
 
+.feedback p:last-child {
+    margin-left: 51px;
+}
+
 .email {
     color: var(--special-yellowlight);
+    display: block;
 }
 
 .email:hover {
