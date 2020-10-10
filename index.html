@@ -18,16 +18,20 @@
         <div class="head-line container">
           <img src="img/logo-technomart.svg" height="18" width="108" alt="Logo">
           <a class="header-word search" href="#">
-            <!-- icon-search.svg -->
-              Поиск:
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+            </svg>
+            Поиск:
           </a>
-          <a class="header-word" href="#">
+          <a class="header-word bookmark" href="#">
             <!-- icon-bookmark -->
-              Закладки
+              Закладки: 0
           </a>
-          <a class="header-word" href="#">
+          <a class="header-word cart" href="#">
             <!-- icon-cart -->
-              Корзина
+              Корзина: 0
           </a>
           <a class="header-word" href="#">
             <span>Оформить заказ</span>
@@ -51,9 +55,12 @@
             
             <div class="login-registration">
               <a class="login-button login-link" href="#">
-                <!-- icon-login -->
-                  Войти
-                </a>
+                <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5"/>
+                  <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z" fill="#C5C5C5"/>
+                </svg>
+                Войти
+              </a>
               <a class="login-button registration-link" href="#">Регистрация</a>
             </div>
           </div>
@@ -117,55 +124,40 @@
               <a class="button promo-button" href="#">
                 На любой вкус
               </a>
-              <!-- <img src="img/materials.svg" height="44" width="65" alt=""> -->
             </li>
             <li class="promo-item devices">
               <b>Инструмент</b>
               <a class="button promo-button" href="#">
                 На все случаи
               </a>
-              <!-- <img src="img/devices.svg" height="61" width="75" alt=""> -->
             </li>
             <li class="promo-item tech">
               <b>Техника</b>
               <a class="button promo-button" href="#">
                 Для стройки
               </a>
-              <!-- <img src="img/vehicle.svg" height="78" width="62" alt=""> -->
             </li>
             <li class="slider">
+              <div class="slider-head">
+                <p class="slider-name">Перфораторы</p>
+                <p class="slider-synopsys">Настоящие мужские игрушки</p>
+              </div>
               <img src="img/Slider-img-2.jpg" height="266" width="620" alt="Перфораторы">
+              <a class="button slider-open red-button" href="catalog.html">Открыть каталог</a>
             </li>
             <li class="promo-item sale">
               <b>Скидки 50%</b>
               <a class="button promo-button" href="#">
                 На 350 товаров
               </a>
-              <!-- <img src="img/sale.svg" height="72" width="59" alt=""> -->
             </li>
             <li class="promo-item delivery">
               <b>Доставка</b>
               <a class="button promo-button" href="#">
                 Бесплатно
               </a>
-              <!-- <img src="img/delivery.svg" height="63" width="78" alt=""> -->
             </li>
           </ul>
-  
-          <!--Промо-блок (Слайдер)-->
-          <!-- <p class="slider-name">Перфораторы</p>
-          <p class="slider-synopsys">Настоящие мужские игрушки</p> -->
-          <!-- <img src="img/Slider-img-1.jpg" height="266" width="620" alt="Дрели"> -->
-          
-          <!-- <a class="button slider-open red-button" href="catalog.html">Открыть каталог</a>
-          <button class="slider-button slider-button-left" type="button">
-           / icon-left /
-            влево
-          </button>
-          <button class="slider-button slider-button-right" type="button">
-            / icon-left /
-            вправо
-          </button> -->
   
         </section>
   
@@ -175,33 +167,32 @@
   
           <div class="popular-head">
             <h2>Популярные товары:</h2>
-            <a class="button red-button" href="#">Все популярные товары</a>
+            <a class="button red-button goods-button" href="#">Все популярные товары</a>
           </div>
           
           <ul class="goods-list">
             <li class="goods-item">
               <img src="img/Bosch-BFG-9k.jpg" height="164" width="184" alt="BOSCH BFG 9000">
               <span class="goods-name">Перфоратор BOSCH BFG 9000</span>
-              <span class="old-price">32500</span>
+              <span class="old-price">32500 Р.</span>
               <span class="current-price">25500 Р.</span>
             </li>
             <li class="goods-item">
-              <span class="new">NEW</span>
               <img src="img/Bosch-BFG-3k.jpg" height="112" width="127" alt="BOSCH BFG 3000">
               <span class="goods-name">Перфоратор BOSCH BFG 3000</span>
-              <span class="old-price">22500</span>
+              <span class="old-price">22500 Р.</span>
               <span class="current-price">15500 Р.</span>
             </li>
             <li class="goods-item">
               <img src="img/Bosch-BFG-6k.jpg" height="128" width="144" alt="BOSCH BFG 6000">
               <span class="goods-name">Перфоратор BOSCH BFG 6000</span>
-              <span class="old-price">30500</span>
+              <span class="old-price">30500 Р.</span>
               <span class="current-price">25500 Р.</span>
             </li>
             <li class="goods-item">
-              <span class="new">NEW</span>
               <img src="img/Bosch-BFG-2k.jpg" height="112" width="127" alt="BOSCH BFG 2000">
               <span class="goods-name">Перфоратор BOSCH BFG 2000</span>
+              <span class="old-price"></span>
               <span class="current-price">12500 Р.</span>
             </li>            
           </ul>
@@ -214,46 +205,46 @@
   
           <div class="popular-head">
             <h2>Популярные производители:</h2>
-            <a class="button red-button" href="#">Все производители</a>
+            <a class="button red-button all-manufacturers" href="#">Все производители</a>
           </div>
   
           <ul class="manufacturers-list">
-            <li class="manufacturer">
+            <li class="manufacturer bosch">
               <a href="#">
                 <img src="img/Logo-Bosch.png" height="37" width="126" alt="Bosch">
               </a>
             </li>
-            <li class="manufacturer">
+            <li class="manufacturer Makita">
               <a href="#">
                 <img src="img/Logo-Makita.png" height="40" width="123" alt="Makita">
               </a>
             </li>
-            <li class="manufacturer">
+            <li class="manufacturer DeWalt">
               <a href="#">
                 <img src="img/Logo-DeWalt.png" height="44" width="146" alt="DeWALT">
               </a>
             </li>
-            <li class="manufacturer">
+            <li class="manufacturer Interskol">
               <a href="#">
                 <img src="img/Logo-Interskol.png" height="75" width="200" alt="Интерскол">
               </a>
             </li>
-            <li class="manufacturer">
+            <li class="manufacturer Hitachi">
               <a href="#">
                 <img src="img/Logo-Hitachi.png" height="31" width="169" alt="Hitachi">
               </a>
             </li>
-            <li class="manufacturer">
+            <li class="manufacturer LG">
               <a href="#">
                 <img src="img/Logo-LG.png" height="73" width="121" alt="LG">
               </a>
             </li>
-            <li class="manufacturer">
+            <li class="manufacturer AEG">
               <a href="#">
                 <img src="img/Logo-AEG.png" height="96" width="151" alt="AEG">
               </a>
             </li>
-            <li class="manufacturer">
+            <li class="manufacturer Metabo">
               <a href="#">
                 <img src="img/Logo-Metabo.png" height="69" width="204" alt="Metabo">
               </a>
@@ -354,7 +345,7 @@
           <div class="footer-navigation">
             
             <ul class="footer-navigation-top">
-              <li><a href="#">Главная</a></li>
+              <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
               <li><a href="catalog.html">Каталог</a></li>
               <li><a href="#">Доставка</a></li>
