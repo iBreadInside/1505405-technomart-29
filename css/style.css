@@ -733,19 +733,20 @@ ul {
     box-sizing: border-box;
 }
 
-.item-hover-buy button {
+.item-hover-buy a {
     width: 135px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    box-sizing: border-box;
 }
 
 .buy {
     position: relative;
     color: white;
     margin-bottom: 10px;
-    padding: 10px 12px 10px 25px;
+    padding: 10px 12px 10px 54px;
     background: var(--basic-green);
     box-shadow: inset 0px -3px 0px #367315;
     border-radius: 2px;
@@ -778,8 +779,7 @@ ul {
     background-color: white;
     border: 3px solid var(--basic-green);
     padding: 8px 31px 6px 30px;
-    border-radius: 2px;
-    
+    border-radius: 2px;    
 }
 
 .wishlist:hover {
