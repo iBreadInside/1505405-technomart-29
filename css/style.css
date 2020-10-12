@@ -574,6 +574,11 @@ ul {
     width: 22px;
     height: 40px;
     background-color: transparent;
+    border: none;
+}
+
+.slider-button:focus {
+    outline: none;
 }
 
 .slider-left {
