@@ -602,6 +602,31 @@ ul {
     position: absolute;
 }
 
+.slider-dots {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 35px;
+    left: 294px;
+    min-width: 30px;
+}
+
+.slider-page {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    color: white;
+    border: none;
+}
+
+.slider-page:not(:last-child) {
+    margin-right: 8px;
+}
+
+.slider-page:focus {
+    outline: none;    
+}
+
 /* Popular */
 .popular {
     display: grid;
