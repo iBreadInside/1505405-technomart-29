@@ -619,12 +619,25 @@ ul {
     border: none;
 }
 
+.active-slide {
+    /* position: absolute; */
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    background-color: var(--basic-red);
+    border: 4px solid white;
+    border-radius: 50%;
+    /* top: 25%;
+    left: 25%; */
+    outline: none;
+}
+
 .slider-page:not(:last-child) {
     margin-right: 8px;
 }
 
 .slider-page:focus {
-    outline: none;    
+    outline: none;
 }
 
 /* Popular */
