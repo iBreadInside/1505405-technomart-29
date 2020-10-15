@@ -100,7 +100,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .red-button {
@@ -687,7 +686,7 @@ ul {
 .goods-item {
     position: relative;
     border: 1px solid var(--popular-border);
-    height: 318px;
+    min-height: 318px;
     width: 220px;
     display: flex;
     flex-direction: column;
@@ -720,7 +719,7 @@ ul {
     font-size: 18px;
     line-height: 20px;
     text-align: center;
-    max-width: 185px;
+    max-width: 160px;
     margin-left: 5px;
     margin-bottom: 7px;
 }
@@ -813,6 +812,10 @@ ul {
     box-shadow: inset 0px -3px 0px var(--buy-hover);
 }
 
+.buy:active .cart {
+    background-color: var(--basic-red);
+}
+
 .wishlist {
     color: var(--special-black);
     background-color: white;
@@ -828,6 +831,10 @@ ul {
 .wishlist:active {
     border: 3px solid var(--special-black);
     opacity: 0.5;
+}
+
+.wishlist:active .bookmark {
+    background-color: var(--basic-red);
 }
 
 .all-manufacturers {
@@ -1061,6 +1068,11 @@ ul {
     background-color: var(--basic-red);
 }
 
+.main-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
 .main-contacts p {
     width: 181px;
     margin-bottom: 32px;
@@ -1072,7 +1084,7 @@ ul {
 
 .about-button {
     width: 220px;
-    margin-top: auto;
+    margin-top: 9px;
 }
 
 .lost-button {
@@ -1135,13 +1147,15 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .footer-navigation-top {
     display: flex;
     width: 547px;
     justify-content: space-between;
-    margin: 33px 0 28px;
+    margin: 33px 0 28px;    
+    flex-wrap: wrap;
 }
 
 .footer-navigation-top a {
@@ -1154,6 +1168,7 @@ ul {
     display: flex;
     width: 524px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-navigation-bottom a {
