@@ -41,6 +41,7 @@
 
     --linear-greylight: linear-gradient(#FFFFFF, #EAEAEA);
     --filter-greylight: #E5E5E5;
+    --modal-buying: #F1F1F1;
 }
 
 /* Global */
@@ -1347,26 +1348,26 @@ ul {
     margin: auto;    
     border-top: 7px solid var(--basic-red);
     box-sizing: border-box;
+    box-shadow: 0px 0px 14.7px rgba(47, 42, 43, 0.5);
 }
 
 .modal-map {
     width: 943px;
     height: 449px;
     background-color: transparent;
+    box-shadow: none;
 }
 
 .modal-map iframe {
     position: relative;
-    border: none;    
-    box-shadow: 0px 0px 14.7px rgba(47, 42, 43, 0.5);
+    border: none;
+    box-shadow: 0px 0px 14.7px rgba(47, 42, 43, 0.5);;
 }
 
 .modal-write-us {
     width: 620px;
     height: 430px;
     background-color: white;
-    box-shadow: 0px 0px 14.7px rgba(47, 42, 43, 0.5);
-    box-sizing: border-box;
 }
 
 .modal-container {
@@ -1452,6 +1453,71 @@ ul {
     margin: 37px auto;
 }
 
+.modal-buying {
+    width: 620px;
+    height: 275px;
+}
+
+.modal-buying-container {    
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.buying-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+}
+
+.buying-top p {
+    position: relative;
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.buying-top p::before {
+    position: absolute;
+    content: "";
+    top: -17px;
+    left: -95px;
+    width: 66px;
+    height: 66px;
+    background-image: url("../img/icon-mark.svg");
+}
+
+.buying-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--modal-buying);
+}
+
+.buying-bottom a {
+    margin-bottom: -12px;
+}
+
+.buying-bottom a:not(:last-child) {
+    margin-right: 7px;
+}
+
+.buying-bottom a:not(:first-child) {
+    margin-left: 5px;
+}
+
+.modal-button-buy {
+    padding: 10px 46px;
+}
+
+.modal-button-continue {
+    padding: 10px 32px;
+    color: black;
+    background-color: white;
+}
+
 /* Close Button */
 .close-button {
     position: absolute;
@@ -1486,6 +1552,12 @@ ul {
     top: 13px;
     right: 9px;
 }
+
+.buying-close {
+    top: 9px;
+    right: 8px;
+}
+
 
 /* Catalog Page Content */
 .visually-hidden {
