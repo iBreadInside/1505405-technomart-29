@@ -173,7 +173,7 @@ ul {
     fill-opacity: 1;
 }
 
-.search:focus + path {
+.search-form:focus-within path {
     fill: red;
     fill-opacity: 1;
 }
@@ -801,7 +801,11 @@ ul {
 }
 
 .goods-item:hover .item-hover-buy,
-.catalog-item:hover .item-hover-buy {
+.catalog-item:hover .item-hover-buy,
+.goods-item:focus .item-hover-buy,
+.catalog-item:focus .item-hover-buy,
+.goods-item:focus-within .item-hover-buy,
+.catalog-item:focus-within .item-hover-buy {
     display: flex;
 }
 
@@ -875,7 +879,7 @@ ul {
     box-sizing: border-box;
 }
 
-.item-hover-buy a {
+.item-hover-buy .hover-button {
     width: 135px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
@@ -888,11 +892,12 @@ ul {
     position: relative;
     color: white;
     margin-bottom: 10px;
-    padding: 10px 12px 10px 54px;
+    padding: 10px 12px 10px 22px;
     background: var(--basic-green);
     box-shadow: inset 0px -3px 0px #367315;
     border-radius: 2px;
     border: none;
+    box-sizing: border-box;
 }
 
 .buy::before {
@@ -1221,12 +1226,16 @@ ul {
 .footer-contacts {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
+
+.footer-contacts .logo-technomart {
+    margin-bottom: 22px; 
+}   
 
 .footer-contacts img {
     background-color: var(--basic-red);
     padding: 20px 41px 25px;
-    margin-bottom: 22px;    
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
@@ -1870,6 +1879,11 @@ ul {
     background-position: 0 0;
     box-sizing: border-box;
     opacity: 0.8;
+}
+
+.filter-input:focus + label {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-offset: 5px;
 }
 
 .filter-button {
