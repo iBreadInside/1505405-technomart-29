@@ -327,26 +327,27 @@
             </ul>
     
             <ul class="describe-list">
-              <li class="describe-item">
+              <!-- <li class="describe-item item-delivery">
                 <h3>Доставка</h3>
                 <p class="service-text">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем,</p>
                 <p class="service-text">поднимая его на&nbsp;ваш этаж!</p>
-              </li>
+              </li> -->
 
-              <!-- <li class="describe-item">
+              <!-- <li class="describe-item item-guarantee">
                 <h3>Гарантия</h3>
                 <p class="service-text">Если купленный у&nbsp;нас товар поломается или заискрит,</p>
-                <p>а&nbsp;также в&nbsp;случае пожара, спровоцированного его возгоранием,</p>
-                <p>вы&nbsp;всегда можете быть уверены в&nbsp;нашей</p>
-                <p>гарантии. Мы&nbsp;обменяем сгоревший товар на&nbsp;новый.</p>
-                <p>Дом уж&nbsp;восстановите как-нибудь сами.</p>
-              </li>
+                <p class="service-text">а&nbsp;также в&nbsp;случае пожара, спровоцированного его</p>
+                <p class="service-text">возгоранием, вы&nbsp;всегда можете быть уверены в&nbsp;нашей</p>
+                <p class="service-text">гарантии. Мы&nbsp;обменяем сгоревший товар на&nbsp;новый.</p>
+                <p class="service-text">Дом уж&nbsp;восстановите как-нибудь сами.</p>
+              </li> -->
               
-              <li class="describe-item">
+              <li class="describe-item item-credit">
                 <h3>Кредит</h3>
                 <p class="service-text">Залезть в&nbsp;долговую яму стало проще!</p>
-                <p>Кредитные консультанты придут вам на&nbsp;помощь.</p>
-              </li> -->
+                <p class="service-text">Кредитные консультанты придут вам на&nbsp;помощь.</p>
+                <a class="button credit-button" href="#">Отправить заявку</a>
+              </li>
             </ul>
           </div>
 
@@ -376,7 +377,7 @@
         <div class="main-contacts">
           <h3 class="service-name">Контакты</h3>
           <p class="service-text">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис:</p>
-          <img src="img/Map.jpg" height="158" width="300" alt="Карта" tabindex="0">
+          <img class="map-img" src="img/Map.jpg" height="158" width="300" alt="Карта" tabindex="0">
           <a class="button red-button lost-button" href="#">Заблудились? Напишите нам!</a>
         </div>
 
@@ -470,25 +471,25 @@
       <div class="modal-container">
          
         <div class="write-us-container">
-          <form class="write-form" action="https://echo.htmlacademy.ru" method="POST">
+          <form class="write-form" action="https://echo.htmlacademy.ru" method="POST" id="send-form">
             <div class="write-name">
               <label for="your-name">Ваше имя:</label>
-              <input class="small-form" id="your-name" type="text" placeholder="  Имя Фамилия">
+              <input class="small-form name-area" id="your-name" type="text" placeholder="Имя Фамилия">
             </div>
             <div class="write-email">
               <label for="your-email">Ваш e-mail:</label>
-              <input class="small-form" id="your-email" type="email" placeholder="  email@example.com">
+              <input class="small-form email-area" id="your-email" type="email" placeholder="email@example.com">
             </div>
             <div class="write-letter">
               <label for="letter">Текст письма:</label>
-              <textarea class="wide-form" id="letter" placeholder="  В свободной форме" rows="4"></textarea>
+              <textarea class="wide-form" id="letter" placeholder="В свободной форме" rows="4"></textarea>
             </div>
           </form>          
         </div>
   
         <div class="write-us-button">
           <div class="write-us-container">
-            <a class="button send">Отправить</a>
+            <button type="submit" class="button send" form="send-form">Отправить</a>
           </div>
         </div>
         <button class="close-button write-us-close" aria-label="Закрыть">
@@ -508,7 +509,7 @@
         <button type="button" class="close-button buying-close" aria-label="Закрыть"></button>
       </div>
     </section>
-    
+    <script src="js/script.js"></script>
   </body>
       
 </html>

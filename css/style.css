@@ -210,6 +210,10 @@ ul {
     padding-left: 49px;
 }
 
+.red {
+    background-color: var(--basic-red);
+}
+
 .bookmark::before {
     content: "";
     position: absolute;
@@ -1024,7 +1028,8 @@ ul {
     font-size: 13px;
     line-height: 24px;
     color: black;
-    margin-bottom: 1px;
+    margin-top: 0;
+    margin-bottom: auto;
 }
 
 .service-container {
@@ -1130,23 +1135,45 @@ ul {
 .describe-item::after {
     content: "";
     position: absolute;
-    background-image: url("../img/Service-Delivery.svg");
     top: 22px;
     right: 0;
     width: 468px;
     height: 216px;
 }
 
-.service-text {
-    margin-top: 0;
-    margin-bottom: auto;
-    font-size: 13px;
-    line-height: 24px;
+.item-delivery::after {
+    background-image: url("../img/Service-Delivery.svg");
+}
+
+.item-guarantee::after {
+    background-image: url("../img/Service-Guarantee.svg");
+}
+
+.item-credit::after {
+    background-image: url("../img/Service-Credit.svg");
 }
 
 .describe-item .service-text {
     max-width: 275px;
     margin-bottom: 0;
+}
+
+.item-guarantee > .service-text {
+    max-width: 315px;
+}
+
+.item-credit > .service-text {
+    max-width: 280px;
+    top: -2px;
+    right: -13px;
+}
+
+.credit-button {
+    width: 195px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 24px;
+    border-radius: 2px;
 }
 
 .transport-item {
@@ -1227,11 +1254,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.footer-contacts .logo-technomart {
-    margin-bottom: 22px; 
-}   
+}  
 
 .footer-contacts img {
     background-color: var(--basic-red);
@@ -1243,7 +1266,7 @@ ul {
     font-size: 18px;
     line-height: 24px;
     width: 323px;
-    margin-top: 0;
+    margin-top: 22px;
     margin-bottom: 54px;
     align-items: center;
 }
@@ -1432,11 +1455,17 @@ ul {
     box-sizing: border-box;
     font-size: 13px;
     line-height: 24px;
-    color: var(--old-price);
+    color: black;
     border: 2px solid var(--basic-greylight);
     border-radius: 2px;
     text-overflow: ellipsis;
     min-height: 38px;
+    padding-left: 12px;
+}
+
+.write-form input::placeholder,
+.write-form textarea::placeholder {
+    color: var(--old-price);
 }
 
 .write-form textarea {
@@ -1471,6 +1500,8 @@ ul {
     padding-top: 11px;
     padding-bottom: 9px;
     margin: 37px auto;
+    width: 100%;
+    border: none;
 }
 
 .modal-buying {
@@ -1578,6 +1609,55 @@ ul {
     right: 8px;
 }
 
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+/* Animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+  
+    70% {
+        transform: translateY(30px);
+    }
+  
+    90% {
+        transform: translateY(-10px);
+    }
+  
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
 
 /* Catalog Page Content */
 .visually-hidden {
