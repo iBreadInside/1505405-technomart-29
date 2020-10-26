@@ -53,7 +53,7 @@ if (writeUsForm) {
     writeUsClose.addEventListener('click', function (evt) {
         evt.preventDefault();
         writeUsPopup.classList.remove('modal-show');
-        writeUsPopup.classList.remove("modal-error");
+        writeUsPopup.classList.remove('modal-error');
     });
 
     writeYourName.addEventListener('input', setLocalStorageName);
@@ -76,9 +76,9 @@ if (writeUsForm) {
     writeForm.addEventListener('submit', function (evt) {
         if (!writeYourName.value || !writeEmail.value) {
             evt.preventDefault();
-            writeUsPopup.classList.remove("modal-error");
+            writeUsPopup.classList.remove('modal-error');
             writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
-            writeUsPopup.classList.add("modal-error");
+            writeUsPopup.classList.add('modal-error');
         }
         else {
             if (isStorageSupport) {
@@ -92,12 +92,12 @@ if (writeUsForm) {
 
 window.addEventListener('keydown', function (evt) {
     if (evt.key === 'Escape') {
-        if (writeUsPopup.classList.contains("modal-show")
+        if (writeUsPopup.classList.contains('modal-show')
         || buyPopup.classList.contains('modal-show')
         || mapPopup.classList.contains('modal-show')) {
             evt.preventDefault();
-            writeUsPopup.classList.remove("modal-show");
-            writeUsPopup.classList.remove("modal-error");
+            writeUsPopup.classList.remove('modal-show');
+            writeUsPopup.classList.remove('modal-error');
             buyPopup.classList.remove('modal-show');
             mapPopup.classList.remove('modal-show');
         }

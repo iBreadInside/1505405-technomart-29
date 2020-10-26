@@ -1404,7 +1404,8 @@ ul {
 .modal-map iframe {
     position: relative;
     border: none;
-    box-shadow: 0px 0px 14.7px rgba(47, 42, 43, 0.5);;
+    box-shadow: 0px 0px 14.7px rgba(47, 42, 43, 0.5);
+    border: none;
 }
 
 .modal-write-us {
