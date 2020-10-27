@@ -325,7 +325,7 @@ ul {
     background-color: white;
     font-size: 21px;
     line-height: 21px;
-    display: inline-block;
+    display: block;
 }
 
 .login-registration {
@@ -532,7 +532,7 @@ ul {
 }
 
 .promo-button {
-    display: inline-block;
+    display: block;
     width: 135px;
     padding: 10px;
     background-color: var(--promo-button);
