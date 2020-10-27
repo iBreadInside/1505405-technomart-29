@@ -46,7 +46,7 @@
 
 /* Global */
 body {
-    min-width: 1200px;
+    min-width: 940px;
     margin: 0;
     padding: 0;
     font-family: "Cuprum", Arial, sans-serif;
@@ -60,7 +60,9 @@ body {
 .container {
     width: 940px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0;    
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a {
@@ -1859,7 +1861,7 @@ ul {
 
 .price-controls label {
     text-transform: uppercase;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
 }
@@ -1888,7 +1890,7 @@ ul {
     display: block;
     cursor: pointer;
     user-select: none;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 19px;
     color: black;
@@ -1968,7 +1970,7 @@ ul {
 }
 
 .filter-button {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: black;
@@ -1983,7 +1985,7 @@ ul {
 /* Sorting */
 .sorting {
     background-color: var(--catalog-filter);
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: black;
@@ -2104,7 +2106,7 @@ ul {
 }
 
 .pagination-item {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
